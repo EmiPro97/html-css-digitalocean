@@ -49,6 +49,23 @@
 .text-capitalize{
     text-transform: capitalize;
 }
+
+/* Margin */
+.mr-t15{
+    margin-top: 15px;
+}
+
+.mr-b10{
+    margin-bottom: 10px;
+}
+
+.mr-b15{
+    margin-bottom: 15px;
+}
+
+.mr-b20{
+    margin-bottom: 20px;
+}
 /* ///////////////////////////////////////////////////////// */
 
 /* LAYOUT */
@@ -394,7 +411,7 @@
 /* ///////////////////////////////////////////////////////// */
 
 /* RESPONSIVE LG */
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1200px){
 
     /* Layout */
     .container{

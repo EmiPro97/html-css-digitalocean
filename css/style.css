@@ -1,3 +1,204 @@
 body{
     font-family: 'Roboto', sans-serif;
+    padding-top: 80px;
+}
+/* ///////////////////////////////////////////////////////// */
+
+/* UTILITIES */
+.no-display{
+    display: none;
+}
+
+/* Text */
+.text-small{
+    font-size: 12px;
+}
+
+/* Color */
+.c-darkblue{
+    color: #0B2352;
+}
+
+/* Inline-list */
+.inline-list{
+    list-style: none
+}
+
+.inline-list li{
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.inline-list a{
+    text-decoration: none;
+}
+
+
+/* Down-arrow-item */
+.my-small-dropdown::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f078";
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+
+/* Buttons */
+.my-btn{
+    border: 1px solid #006aff;
+    border-radius: 3px;
+    padding: 7px 10px;
+}
+
+.inline-list .my-btn{
+    color: #006aff;
+}
+
+.my-btn.btn-full-w{
+    width: 100%;
+    text-align: center;
+    border-color: transparent;
+    padding: 7px 0;
+}
+
+/* ///////////////////////////////////////////////////////// */
+
+/* HEADER */
+.header-content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 80px;
+    background-color: #fff;
+}
+
+.header-content img{
+    width: 180px;
+    vertical-align: middle;
+}
+
+.header-content i{
+    color: #2687fd;
+    font-size: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/* ///////////////////////////////////////////////////////// */
+
+/* HERO */
+.hero-content{
+    background-image: url(../img/bg-banner-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hero-content h1{
+    color: #fff;
+    font-size: 35px;
+}
+
+.hero-content h1 ~ p{
+    color: #bbccff;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+/* Form */
+.hero-content .my-form-wrap{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 15px;
+}
+
+.hero-content .my-form-wrap h3{
+    font-size: 24px;
+}
+
+.hero-content .my-form-wrap h3 span{
+    color: #006aff;
+}
+
+.my-form-wrap .my-form input{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+    box-shadow: 0px 0px 5px 1px rgb(204, 204, 204, 0.4);
+    border-radius: 5px;
+}
+
+.my-form-wrap .my-form input::placeholder{
+    font-weight: bold;
+    color: #7d7d7d;
+}
+
+.my-form-wrap .my-form button{
+    font-weight: bold;
+}
+
+.my-form-wrap .my-form button:nth-child(3){
+    background-color: #2687fd;
+    color: #fff;
+}
+
+.my-form-wrap .my-form button:last-child{
+    position: relative;
+    background-color: #fff;
+    color: #696868;
+    box-shadow: 2px 2px 3px rgb(204, 204, 204, 0.4);
+}
+
+.my-form-wrap .my-form button:last-child .google-logo{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 18px;
+}
+
+
+/* Terms of service */
+.hero-content p:last-child a{
+    color: #2687fd;
+}
+/* ///////////////////////////////////////////////////////// */
+
+/* RESPONSIVE */
+
+/* MD */
+@media screen and (min-width: 992px){
+    
+    /* HERO */
+    .hero-content h1{
+        font-size: 55px;
+    }
+    
+    .hero-content h1 ~ p{
+        font-size: 24px;
+    }
+
+    .hero-content .my-form-wrap h3{
+        font-size: 30px;
+    }
+}
+
+
+/* LG */
+@media screen and (min-width: 1200px){
+
+    /* HEADER */
+    .header-content .my-dropdown{
+        display: none;
+    }
+
+    .header-content .no-display{
+        display: inline-block;
+    }
 }
