@@ -18,7 +18,7 @@ h3{
 }
 
 h4{
-    font-size: 15px;
+    font-size: 16px;
 }
 
 p{
@@ -26,7 +26,8 @@ p{
 }
 
 a{
-    color: #2687fd;  
+    color: #2687fd;
+    text-decoration: none;  
 }
 /* ///////////////////////////////////////////////////////// */
 
@@ -42,7 +43,11 @@ a{
 }
 
 p.small-p{
-    font-size: 1rem;
+    font-size: 0.9rem;
+}
+
+.text-xsmall{
+    font-size: 0.85rem;
 }
 /* ///////////// */
 
@@ -66,10 +71,6 @@ p.small-p{
     display: inline-block;
     padding: 0 10px;
     vertical-align: middle;
-}
-
-.inline-list a{
-    text-decoration: none;
 }
 /* ///////////// */
 
@@ -140,7 +141,7 @@ p.small-p{
     color: #bbccff;
     line-height: 30px;
 }
-
+/* ///////////// */
 
 /* Form */
 .hero-content .my-form-wrap{
@@ -190,6 +191,12 @@ p.small-p{
     transform: translateY(-50%);
     width: 18px;
 }
+/* ///////////// */
+
+/* Terms of service */
+.my-form-wrap p a{
+    text-decoration: underline;
+}
 /* ///////////////////////////////////////////////////////// */
 
 /* SPONSOR */
@@ -206,10 +213,6 @@ p.small-p{
 .sponsor-content .inline-list img{
     max-width: 150px;
     width: 100%;
-}
-
-.sponsor-content a{
-    text-decoration: none;
 }
 
 .sponsor-content a:hover{
@@ -240,15 +243,56 @@ p.small-p{
 }
 /* ///////////////////////////////////////////////////////// */
 
+/* SLIDE */
+.slide-wrap img{
+    width: 100%;
+    max-width: 300px;
+}
+
+.slide-wrap .inline-list li{
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #006aff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slide-wrap .inline-list li:first-child{
+    background-color: #006aff;
+}
+/* ///////////// */
+
+/* Slide-1 */
+.slide-1-content{
+    background-color: #f3f5f9;
+    padding: 60px 20px;
+}
+/* ///////////////////////////////////////////////////////// */
+
+/* FEATURES */
+.features-content .small-img{
+    width: 33px;
+}
+/* ///////////////////////////////////////////////////////// */
+
 /* RESPONSIVE */
 
 /* SM */
 @media screen and (min-width: 768px){
-    
+    /* GENERAL */
     h4{
         font-size: 18px;
     }
 
+    p.small-p{
+        font-size: 1rem;
+    }
+
+    .text-xsmall{
+        font-size: 1rem;
+    }
+    /* ///////////// */
 
     /* SPONSOR */
     .sponsor-content{
@@ -260,7 +304,7 @@ p.small-p{
         width: calc(100% / 6 - 5px);
         margin-bottom: 15px;
     }
-
+    /* ///////////// */
 
     /* DEPLOY AND SCALE */
     .deploy-content .my-deploy-col ul li{
@@ -277,12 +321,51 @@ p.small-p{
         padding-left: 15px;
         padding-right: 15px;
     }
+    /* ///////////// */
+
+    /* SLIDE */
+    .slide-wrap img{
+        max-width: 400px;
+    }
+
+    .slide-wrap .slide-img-wrap{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .slide-wrap .slide-img-wrap::before,
+    .slide-wrap .slide-img-wrap::after{
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 42px;
+        cursor: pointer;
+        position: absolute;
+        top: 45%;
+    }
+    
+    .slide-wrap .slide-img-wrap::after{
+        content: "\f105";
+        color: #0B2352;
+        left: 103%;   
+    }
+    
+    .slide-wrap .slide-img-wrap::before{
+        content: "\f104";
+        color: #0b23528e;
+        right: 103%;
+    }
+    /* ///////////// */
+
+    /* FEATURES */
+    .features-content .small-img{
+        width: 40px;
+    }
 }
 /* ///////////////////////////////////////////////////////// */
 
 /* MD */
 @media screen and (min-width: 992px){
-    
+    /* GENERAL */
     h1{
         font-size: 55px;
     }
@@ -316,5 +399,11 @@ p.small-p{
     .header-content .no-display{
         display: inline-block;
     }
+    /* ///////////// */
+
+    /* SLIDE */
+    .slide-wrap img{
+        max-width: 500px;
+    } 
 }
 /* ///////////////////////////////////////////////////////// */
