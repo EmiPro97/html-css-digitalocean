@@ -1,6 +1,28 @@
+/* GENERAL STYLES */
 body{
     font-family: 'Roboto', sans-serif;
     padding-top: 80px;
+}
+
+h1{
+    color: #fff;
+    font-size: 35px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 15px;
+}
+
+p{
+    font-size: 20px;
 }
 
 a{
@@ -12,25 +34,34 @@ a{
 .no-display{
     display: none;
 }
-
+/* ///////////// */
 
 /* Text */
 .text-small{
     font-size: 12px;
 }
 
+p.small-p{
+    font-size: 1rem;
+}
+/* ///////////// */
 
 /* Color */
 .c-darkblue{
     color: #0B2352;
 }
 
+.c-darkgray{
+    color: #6f7b97;;
+}
+/* ///////////// */
 
-/* Inline-list */
-.inline-list{
+/* List */
+.no-style-list{
     list-style: none
 }
 
+/* Inline-list */
 .inline-list li{
     display: inline-block;
     padding: 0 10px;
@@ -40,7 +71,7 @@ a{
 .inline-list a{
     text-decoration: none;
 }
-
+/* ///////////// */
 
 /* Down-arrow-item */
 .my-small-dropdown::after{
@@ -50,7 +81,7 @@ a{
     vertical-align: middle;
     padding-left: 5px;
 }
-
+/* ///////////// */
 
 /* Buttons */
 .my-btn{
@@ -105,14 +136,8 @@ a{
     padding-bottom: 60px;
 }
 
-.hero-content h1{
-    color: #fff;
-    font-size: 35px;
-}
-
 .hero-content h1 ~ p{
     color: #bbccff;
-    font-size: 20px;
     line-height: 30px;
 }
 
@@ -122,10 +147,6 @@ a{
     background-color: #fff;
     border-radius: 5px;
     padding: 30px 15px;
-}
-
-.hero-content .my-form-wrap h3{
-    font-size: 24px;
 }
 
 .hero-content .my-form-wrap h3 span{
@@ -178,11 +199,6 @@ a{
     background-color: #f3f5f9;
 }
 
-.sponsor-content h4{
-    color: #6f7b97;
-    font-size: 15px;
-}
-
 .sponsor-content .inline-list li{
     width: calc(100% / 2 - 15px);
 }
@@ -201,45 +217,93 @@ a{
 }
 /* ///////////////////////////////////////////////////////// */
 
+/* DEPLOY AND SCALE */
+.deploy-content{
+    padding-bottom: 25px;
+}
+
+.deploy-content .container{
+    padding: 0 15px;
+}
+
+.deploy-content p{
+    line-height: 25px;
+}
+
+.deploy-content .my-deploy-col{
+    border-left: 2px solid #7c869f57;
+}
+
+.deploy-content ul li{
+    color: #7c869f;
+    line-height: 38px;
+}
+/* ///////////////////////////////////////////////////////// */
+
 /* RESPONSIVE */
 
 /* SM */
 @media screen and (min-width: 768px){
     
+    h4{
+        font-size: 18px;
+    }
+
+
     /* SPONSOR */
     .sponsor-content{
         padding-right: 20px;
         padding-left: 20px;
     }
 
-    .sponsor-content h4{
-        font-size: 18px;
-    }
-
     .sponsor-content .inline-list li{
         width: calc(100% / 6 - 5px);
         margin-bottom: 15px;
     }
-}
 
+
+    /* DEPLOY AND SCALE */
+    .deploy-content .my-deploy-col ul li{
+        font-size: 19px;
+        line-height: 50px;
+    }
+
+    .deploy-content .deploy-nested-wrap{
+        margin-bottom: 30px;
+    }
+
+    .deploy-content .deploy-nested-wrap div{
+        margin-bottom: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+/* ///////////////////////////////////////////////////////// */
 
 /* MD */
 @media screen and (min-width: 992px){
     
-    /* HERO */
-    .hero-content h1{
+    h1{
         font-size: 55px;
     }
     
-    .hero-content h1 ~ p{
+    h2{
+        font-size: 38px;
+    }
+    
+    h3{
+        font-size: 30px;
+    }
+    
+    h1 ~ p{
         font-size: 24px;
     }
 
-    .hero-content .my-form-wrap h3{
-        font-size: 30px;
+    h2 ~ p{
+        font-size: 22px;
     }
 }
-
+/* ///////////////////////////////////////////////////////// */
 
 /* LG */
 @media screen and (min-width: 1200px){

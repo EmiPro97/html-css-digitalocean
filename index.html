@@ -25,14 +25,24 @@
     <!-- HEADER -->
     <header class="header-content">
         <div class="container clearfix">
+
+            <!-- Left side -->
+
+            <!-- Logo -->
             <div class="col-xs-6 col-lg-3">
                 <img src="./img/logo.png" alt="logo">
             </div>
+
+            <!-- Right side  -->
+
+            <!-- Mobile dropdown -->
             <div class="col-xs-6 text-right my-dropdown">
                 <i class="fas fa-bars"></i>
             </div>
-            <div class="col-lg-5 no-display">
-                <ul class="inline-list">
+
+            <!-- Desktop nav -->
+            <nav class="col-lg-5 no-display">
+                <ul class="no-style-list inline-list">
                     <li>
                         <a class="my-small-dropdown c-darkblue" href="#">Products</a>
                     </li>
@@ -46,9 +56,9 @@
                         <a class="c-darkblue" href="#">Pricing</a>
                     </li>
                 </ul>
-            </div>
-            <div class="col-lg-4 no-display text-right">
-                <ul class="inline-list">
+            </nav>
+            <nav class="col-lg-4 no-display text-right">
+                <ul class="no-style-list inline-list">
                     <li>
                         <a class="c-darkblue" href="#">Docs</a>
                     </li>
@@ -62,18 +72,24 @@
                         <a class="my-btn" href="#">Sign Up</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
 
     <!-- HERO -->
     <section class="hero-content">
         <div class="container clearfix">
+
+            <!-- Left side >SM -->
             <div class="col-xs-12 col-sm-7 mr-b15">
                 <h1 class="mr-b20">The simplest cloud platform for developers & teams</h1>
                 <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
             </div>
+
+            <!-- Right side >SM -->
             <div class="col-xs-12 col-sm-5 text-center">
+
+                <!-- Form -->
                 <div class="my-form-wrap">
                     <h3 class="c-darkblue mr-b10" >
                         Deploy your app in seconds. <br>
@@ -96,10 +112,10 @@
     
 
     <!-- SPONSOR -->
-    <section class="sponsor-content text-center">
-        <h4 class="text-uppercase mr-b20">innovative businesses trust digitalocean</h4>
+    <section class="sponsor-content text-center mr-b60">
+        <h4 class="text-uppercase mr-b20 c-darkgray">innovative businesses trust digitalocean</h4>
         <div class="container">
-            <ul class="inline-list">
+            <ul class="no-style-list inline-list">
                 <li class="mr-b15">
                     <img src="./img/docker.svg" alt="docker">
                 </li>
@@ -120,6 +136,53 @@
                 </li>
             </ul>
             <a href="#">View customer stories ></a>
+        </div>
+    </section>
+
+    <!-- DEPLOY AND SCALE -->
+    <section class="deploy-content">
+
+        <!-- Left side >SM -->
+        <div class="container clearfix">
+            <h2 class="text-center c-darkblue mr-b10">Deploy and scale seamlessly</h2>
+            <p class="text-center c-darkgray mr-b60">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+            <div class="my-deploy-col col-xs-12 col-sm-offset-1  col-sm-3 mr-b20">
+                <ul class="no-style-list" >
+                    <li>Deploy</li>
+                    <li>Manage</li>
+                    <li>Secure</li>
+                    <li>Scale</li>
+                    <li>Monitor</li>
+                </ul>
+            </div>
+
+            <!-- Right side >SM -->
+            <div class="col-xs-12 col-sm-7 padding-0">
+                <div class="deploy-nested-wrap clearfix">
+                    <div class="col-sm-6 mr-b30 padding-0">
+                        <img class="small-img mr-b5" src="./img/cluster-deploy.svg" alt="general-img">
+                        <h4 class="c-darkblue mr-b15">Cluster deployments</h4>
+                        <p class="small-p c-darkgray">Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+                    </div>
+                    <div class="col-sm-6 mr-b30 padding-0">
+                        <img class="small-img mr-b5" src="./img/optimized-compute.svg" alt="general-img">
+                        <h4 class="c-darkblue mr-b15">Cluster deployments</h4>
+                        <p class="small-p c-darkgray">Get the compute resources you need with Standard or Optimized Droplets.</p>
+                    </div>
+                </div>
+                <div class="deploy-nested-wrap clearfix">  
+                    <div class="col-sm-6 mr-b30 padding-0">
+                        <img class="small-img mr-b5" src="./img/one-click.svg" alt="general-img">
+                        <h4 class="c-darkblue mr-b15">One-click apps</h4>
+                        <p class="small-p c-darkgray">Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+                    </div>
+                    <div class="col-sm-6 mr-b30 padding-0">
+                        <img class="small-img mr-b5" src="./img/global.svg" alt="general-img">
+                        <h4 class="c-darkblue mr-b15">Global availability</h4>
+                        <p class="small-p c-darkgray">Deploy to any of our data center regions around the world.</p>
+                    </div>
+                </div>    
+            </div>
         </div>
     </section>
 </body>

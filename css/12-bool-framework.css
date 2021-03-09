@@ -59,6 +59,14 @@
     margin-bottom: 0;
 }
 
+.mr-b5{
+    margin-bottom: 5px;
+}
+
+.mr-b10{
+    margin-bottom: 10px;
+}
+
 .mr-b10{
     margin-bottom: 10px;
 }
@@ -71,8 +79,16 @@
     margin-bottom: 20px;
 }
 
+.mr-b30{
+    margin-bottom: 30px;
+}
+
 .mr-b50{
     margin-bottom: 50px;
+}
+
+.mr-b60{
+    margin-bottom: 60px;
 }
 /* ///////////////////////////////////////////////////////// */
 
