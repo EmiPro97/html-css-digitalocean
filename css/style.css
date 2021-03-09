@@ -2,6 +2,10 @@ body{
     font-family: 'Roboto', sans-serif;
     padding-top: 80px;
 }
+
+a{
+    color: #2687fd;  
+}
 /* ///////////////////////////////////////////////////////// */
 
 /* UTILITIES */
@@ -9,15 +13,18 @@ body{
     display: none;
 }
 
+
 /* Text */
 .text-small{
     font-size: 12px;
 }
 
+
 /* Color */
 .c-darkblue{
     color: #0B2352;
 }
+
 
 /* Inline-list */
 .inline-list{
@@ -162,15 +169,59 @@ body{
     transform: translateY(-50%);
     width: 18px;
 }
+/* ///////////////////////////////////////////////////////// */
 
+/* SPONSOR */
+.sponsor-content{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: #f3f5f9;
+}
 
-/* Terms of service */
-.hero-content p:last-child a{
-    color: #2687fd;
+.sponsor-content h4{
+    color: #6f7b97;
+    font-size: 15px;
+}
+
+.sponsor-content .inline-list li{
+    width: calc(100% / 2 - 15px);
+}
+
+.sponsor-content .inline-list img{
+    max-width: 150px;
+    width: 100%;
+}
+
+.sponsor-content a{
+    text-decoration: none;
+}
+
+.sponsor-content a:hover{
+    text-decoration: underline;
 }
 /* ///////////////////////////////////////////////////////// */
 
 /* RESPONSIVE */
+
+/* SM */
+@media screen and (min-width: 768px){
+    
+    /* SPONSOR */
+    .sponsor-content{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .sponsor-content h4{
+        font-size: 18px;
+    }
+
+    .sponsor-content .inline-list li{
+        width: calc(100% / 6 - 5px);
+        margin-bottom: 15px;
+    }
+}
+
 
 /* MD */
 @media screen and (min-width: 992px){
@@ -202,3 +253,4 @@ body{
         display: inline-block;
     }
 }
+/* ///////////////////////////////////////////////////////// */
