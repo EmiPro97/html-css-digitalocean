@@ -7,7 +7,7 @@
     
     <!-- Font-Family -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
 
     <!-- Icons -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css' integrity='sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==' crossorigin='anonymous'/>
@@ -23,7 +23,7 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="header-content">
+    <header class="header-content bg-white">
         <div class="container clearfix">
 
             <!-- Left side -->
@@ -75,163 +75,296 @@
             </nav>
         </div>
     </header>
+<!-- /////////////////////////////////////////////////// -->
 
-    <!-- HERO -->
-    <section class="hero-content">
-        <div class="container clearfix">
+    <!-- MAIN-CONTENT -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero-content">
+            <div class="container clearfix">
+
+                <!-- Left side >SM -->
+                <div class="col-xs-12 col-sm-7 mr-b15">
+                    <h1 class="mr-b20">The simplest cloud platform for developers & teams</h1>
+                    <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
+                </div>
+
+                <!-- Right side >SM -->
+                <div class="col-xs-12 col-sm-5 text-center">
+
+                    <!-- Form -->
+                    <div class="my-form-wrap bg-white">
+                        <h3 class="c-darkblue mr-b10" >
+                            Deploy your app in seconds. <br>
+                            <span>Get started now.</span>
+                        </h3>
+                        <form class="my-form mr-b15" action="#">
+                            <input class="mr-b10" type="email" id="email" placeholder="Email">
+                            <input class="mr-b10" type="password" id="password" placeholder="Password">
+                            <button type="submit" class="my-btn btn-full-w mr-b10 c-white">Create your account</button>
+                            <button type="submit" class="my-btn btn-full-w bg-white">
+                                <img class="google-logo" src="./img/google-icon.png" alt="google-logo">
+                                Sign up with google
+                            </button>
+                        </form>
+                        <p class="text-small c-darkblue">By signing up you agree to the <a href="#">Terms of Service</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SPONSOR -->
+        <section class="sponsor-content text-center mr-b60 bg-gray">
+            <h4 class="text-uppercase mr-b20 c-darkgray">innovative businesses trust digitalocean</h4>
+            <div class="container">
+                <ul class="no-style-list inline-list">
+                    <li class="mr-b15">
+                        <img src="./img/docker.svg" alt="docker">
+                    </li>
+                    <li class="mr-b15">
+                        <img src="./img/gitlab.svg" alt="gitlab">
+                    </li>
+                    <li class="mr-b15">
+                        <img src="./img/slack.svg" alt="slack">
+                    </li>
+                    <li class="mr-b15">
+                        <img src="./img/hashicorp.svg" alt="hashicorp">
+                    </li>
+                    <li>
+                        <img src="./img/wework.svg" alt="hashicorp">
+                    </li>
+                    <li>
+                        <img src="./img/splunk.svg" alt="splunk">
+                    </li>
+                </ul>
+                <a href="#">View customer stories ></a>
+            </div>
+        </section>
+
+
+        <!-- DEPLOY AND SCALE -->
+        <section class="deploy-content">
 
             <!-- Left side >SM -->
-            <div class="col-xs-12 col-sm-7 mr-b15">
-                <h1 class="mr-b20">The simplest cloud platform for developers & teams</h1>
-                <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
-            </div>
+            <div class="container clearfix">
+                <h2 class="text-center c-darkblue mr-b10">Deploy and scale seamlessly</h2>
+                <p class="text-center c-darkgray mr-b60">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+                <div class="my-deploy-col col-xs-12 col-sm-offset-1  col-sm-3 mr-b20">
+                    <ul class="no-style-list" >
+                        <li><a href="#">Deploy</a></li>
+                        <li><a href="#">Manage</a></li>
+                        <li><a href="#">Secure</a></li>
+                        <li><a href="#">Scale</a></li>
+                        <li><a href="#">Monitor</a></li>
+                    </ul>
+                </div>
 
-            <!-- Right side >SM -->
-            <div class="col-xs-12 col-sm-5 text-center">
-
-                <!-- Form -->
-                <div class="my-form-wrap">
-                    <h3 class="c-darkblue mr-b10" >
-                        Deploy your app in seconds. <br>
-                        <span>Get started now.</span>
-                    </h3>
-                    <form class="my-form mr-b15" action="#">
-                        <input class="mr-b10" type="email" id="email" placeholder="Email">
-                        <input class="mr-b10" type="password" id="password" placeholder="Password">
-                        <button type="submit" class="my-btn btn-full-w mr-b10">Create your account</button>      
-                        <button type="submit" class="my-btn btn-full-w">
-                            <img class="google-logo" src="./img/google-icon.png" alt="google-logo">
-                            Sign up with google
-                        </button>      
-                    </form>
-                    <p class="text-small c-darkblue">By signing up you agree to the <a href="#">Terms of Service</a>.</p>
+                <!-- Right side >SM -->
+                <div class="col-xs-12 col-sm-7 padding-0">
+                    <div class="deploy-nested-wrap clearfix">
+                        <div class="col-sm-6 mr-b30 padding-0">
+                            <img class="mr-b5" src="./img/cluster-deploy.svg" alt="general-img">
+                            <h4 class="c-darkblue mr-b15">Cluster deployments</h4>
+                            <p class="small-p c-darkgray">Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+                        </div>
+                        <div class="col-sm-6 mr-b30 padding-0">
+                            <img class="mr-b5" src="./img/optimized-compute.svg" alt="general-img">
+                            <h4 class="c-darkblue mr-b15">Cluster deployments</h4>
+                            <p class="small-p c-darkgray">Get the compute resources you need with Standard or Optimized Droplets.</p>
+                        </div>
+                    </div>
+                    <div class="deploy-nested-wrap clearfix">
+                        <div class="col-sm-6 mr-b30 padding-0">
+                            <img class="mr-b5" src="./img/one-click.svg" alt="general-img">
+                            <h4 class="c-darkblue mr-b15">One-click apps</h4>
+                            <p class="small-p c-darkgray">Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+                        </div>
+                        <div class="col-sm-6 mr-b30 padding-0">
+                            <img class="mr-b5" src="./img/global.svg" alt="general-img">
+                            <h4 class="c-darkblue mr-b15">Global availability</h4>
+                            <p class="small-p c-darkgray">Deploy to any of our data center regions around the world.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
+        </section>
 
-    <!-- SPONSOR -->
-    <section class="sponsor-content text-center mr-b60">
-        <h4 class="text-uppercase mr-b20 c-darkgray">innovative businesses trust digitalocean</h4>
-        <div class="container">
-            <ul class="no-style-list inline-list">
-                <li class="mr-b15">
-                    <img src="./img/docker.svg" alt="docker">
-                </li>
-                <li class="mr-b15">
-                    <img src="./img/gitlab.svg" alt="gitlab">
-                </li>
-                <li class="mr-b15">
-                    <img src="./img/slack.svg" alt="slack">
-                </li>
-                <li class="mr-b15">
-                    <img src="./img/hashicorp.svg" alt="hashicorp">
-                </li>
-                <li>
-                    <img src="./img/hashicorp.svg" alt="hashicorp">
-                </li>
-                <li>
-                    <img src="./img/splunk.svg" alt="splunk">
-                </li>
-            </ul>
-            <a href="#">View customer stories ></a>
-        </div>
-    </section>
 
-    <!-- DEPLOY AND SCALE -->
-    <section class="deploy-content">
-
-        <!-- Left side >SM -->
-        <div class="container clearfix">
-            <h2 class="text-center c-darkblue mr-b10">Deploy and scale seamlessly</h2>
-            <p class="text-center c-darkgray mr-b60">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
-            <div class="my-deploy-col col-xs-12 col-sm-offset-1  col-sm-3 mr-b20">
-                <ul class="no-style-list" >
-                    <li>Deploy</li>
-                    <li>Manage</li>
-                    <li>Secure</li>
-                    <li>Scale</li>
-                    <li>Monitor</li>
+        <!-- SLIDE 1 -->
+        <section class="slide-1-content text-center clearfix mr-b60 bg-gray">
+            <h2 class="c-darkblue mr-b20">Designed for devolopers</h2>
+            <p class="mr-b80 c-darkgray">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+        
+            <!-- Slide -->
+            <div class="slide-wrap col-xs-offset-1 col-xs-10">
+                <div class="slide-img-wrap">
+                    <img class="mr-b15" src="./img/slide.jpg" alt="slide-img">
+                </div>
+                <p class="text-xsmall c-darkblue mr-b80">Create compute servers in 55 seconds or less.</p>
+                <ul class="no-style-list inline-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
             </div>
+        </section>
 
-            <!-- Right side >SM -->
-            <div class="col-xs-12 col-sm-7 padding-0">
-                <div class="deploy-nested-wrap clearfix">
-                    <div class="col-sm-6 mr-b30 padding-0">
-                        <img class="mr-b5" src="./img/cluster-deploy.svg" alt="general-img">
-                        <h4 class="c-darkblue mr-b15">Cluster deployments</h4>
-                        <p class="small-p c-darkgray">Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
-                    </div>
-                    <div class="col-sm-6 mr-b30 padding-0">
-                        <img class="mr-b5" src="./img/optimized-compute.svg" alt="general-img">
-                        <h4 class="c-darkblue mr-b15">Cluster deployments</h4>
-                        <p class="small-p c-darkgray">Get the compute resources you need with Standard or Optimized Droplets.</p>
-                    </div>
+
+        <!-- FEATURES -->
+        <section class="features-content">
+            <div class="container clearfix">
+                <h2 class="c-darkblue text-center mr-b30">The features your business needs</h2>
+                <div class="col-sm-4 mr-b30">
+                    <img class="small-img mr-b10" src="./img/pred-pricing.svg" alt="general-img">
+                    <h4 class="c-darkblue mr-b15">Predictable pricing</h4>
+                    <p class="small-p c-darkgray mr-b15">Leave complex pricing structure behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
+                    <a class="text-xsmall" href="#">Pricing  ></a>
                 </div>
-                <div class="deploy-nested-wrap clearfix">  
-                    <div class="col-sm-6 mr-b30 padding-0">
-                        <img class="mr-b5" src="./img/one-click.svg" alt="general-img">
-                        <h4 class="c-darkblue mr-b15">One-click apps</h4>
-                        <p class="small-p c-darkgray">Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
-                    </div>
-                    <div class="col-sm-6 mr-b30 padding-0">
-                        <img class="mr-b5" src="./img/global.svg" alt="general-img">
-                        <h4 class="c-darkblue mr-b15">Global availability</h4>
-                        <p class="small-p c-darkgray">Deploy to any of our data center regions around the world.</p>
-                    </div>
-                </div>    
+                <div class="col-sm-4 mr-b30">
+                    <img class="small-img mr-b10" src="./img/world-class.svg" alt="general-img">
+                    <h4 class="c-darkblue mr-b15">World-class service</h4>
+                    <p class="small-p c-darkgray mr-b15">Free round-the-clock technical support for all customers. You'll feel love.</p>
+                    <a class="text-xsmall" href="#">Support  ></a>
+                </div>
+                <div class="col-sm-4 mr-b30">
+                    <img class="small-img mr-b10" src="./img/reliable-platform.svg" alt="general-img">
+                    <h4 class="c-darkblue mr-b15">Reliable platform</h4>
+                    <p class="small-p c-darkgray mr-b15">More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+                    <a class="text-xsmall" href="#">Security  ></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!-- SLIDE 1 -->
-    <section class="slide-1-content text-center clearfix mr-b60">
-        <h2 class="c-darkblue mr-b20">Designed for devolopers</h2>
-        <p class="mr-b80 c-darkgray">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+        <!-- REGIONS -->
+        <section class="regions-content">
+            <div class="container clearfix">
+                <h2 class="text-center c-white mr-b20">Service your customers around the world from 12 regions.</h2>
+                
+                <!-- Table -->
+                <div class="col-xs-12 col-md-6">
+                    <table class="mr-b30">
+                        <tbody>
+                            <tr>
+                                <th class="c-white">AMS2</th>
+                                <td class="c-transparent">Amstedam, Netherlands</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+                            </tr>
+                            <tr>
+                                <th class="c-white">AMS3</th>
+                                <td class="c-transparent">Amstedam, Netherlands</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+
+                            </tr>
+                            <tr>
+                                <th class="c-white">BLR1</th>
+                                <td class="c-transparent">Banglore, India</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+
+                            </tr>
+                            <tr>
+                                <th class="c-white">FRA1</th>
+                                <td class="c-transparent">Frankfurt, German</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+
+                            </tr>
+                            <tr>
+                                <th class="c-white">LON1</th>
+                                <td class="c-transparent">London, UK</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+
+                            </tr>
+                            <tr>
+                                <th class="c-white">NYC1</th>
+                                <td class="c-transparent">New York, USA</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+
+                            </tr>
+                        </tbody>    
+                    </table>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th class="c-white">AMS2</th>
+                                <td class="c-transparent">Amstedam, Netherlands</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+
+                            </tr>
+                            <tr>
+                                <th class="c-white">AMS3</th>
+                                <td class="c-transparent">Amstedam, Netherlands</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+
+                            </tr>
+                            <tr>
+                                <th class="c-white">BLR1</th>
+                                <td class="c-transparent">Banglore, India</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+
+                            </tr>
+                            <tr>
+                                <th class="c-white">FRA1</th>
+                                <td class="c-transparent">Frankfurt, German</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+
+                            </tr>
+                            <tr>
+                                <th class="c-white">LON1</th>
+                                <td class="c-transparent">London, UK</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+
+                            </tr>
+                            <tr>
+                                <th class="c-white">NYC1</th>
+                                <td class="c-transparent">New York, USA</td>
+                                <td class="text-right"><a class="c-acquamarine" href="#">Test speed  ></a></td>
+
+                            </tr>
+                        </tbody>
+                    </table>      
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SLIDE 2 -->
+        <section class="slide-2-content text-center clearfix bg-gray">
+            <h2 class="c-darkblue mr-b80">Designed for devolopers</h2>
+            
+            <!-- Slide -->
+            <div class="slide-wrap col-xs-offset-1 col-xs-10">
+                <div class="slide-img-wrap bg-white mr-b30">
+                    <img class="mr-b15" src="./img/rockerbox-logo.png" alt="slide-rockerbox">
+                    <p class="c-darkgray mr-b15">"We have been able to make scaling the technical infrastructure of our business cost effective and efficient."</p>
+                    <p class="c-darkblue"><strong>Rick O'Toole</strong></p>
+                    <span class="mr-b30 c-darkblue">Co-founder and CTO</span>
+                    <a href="#">Read story  ></a>
+                </div>
+                <ul class="no-style-list inline-list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- GET STARTED -->
+        <section class="get-started text-center">
+            <h2 class="c-white mr-b40">Get started now.</h2>
+            <a class="my-btn br-transparent my-btn-big" href="#">Create your account</a>
+        </section>
+    </main>
+<!-- /////////////////////////////////////////////////// -->
+
+    <!-- FOOTER -->
+    <footer class="foot-content">
         
-
-        <!-- Slide -->
-        <div class="slide-wrap col-xs-offset-1 col-xs-10">
-            <div class="slide-img-wrap">
-                <img class="mr-b15" src="./img/slide.jpg" alt="slide-img">
-            </div>
-                <p class="text-xsmall c-darkblue mr-b80">Create compute servers in 55 seconds or less.</p>
-            <ul class="no-style-list inline-list">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </section>
-
-
-    <!-- FEATURES -->
-    <section class="features-content">
-        <div class="container clearfix">
-            <h2 class="c-darkblue text-center mr-b30">The features your business needs</h2>
-            <div class="col-sm-4 mr-b30">
-                <img class="small-img mr-b10" src="./img/pred-pricing.svg" alt="general-img">
-                <h4 class="c-darkblue mr-b15">Predictable pricing</h4>
-                <p class="small-p c-darkgray mr-b15">Leave complex pricing structure behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
-                <a class="text-xsmall" href="#">Pricing  ></a>
-            </div>
-            <div class="col-sm-4 mr-b30">
-                <img class="small-img mr-b10" src="./img/world-class.svg" alt="general-img">
-                <h4 class="c-darkblue mr-b15">World-class service</h4>
-                <p class="small-p c-darkgray mr-b15">Free round-the-clock technical support for all customers. You'll feel love.</p>
-                <a class="text-xsmall" href="#">Support  ></a>
-            </div>
-            <div class="col-sm-4 mr-b30">
-                <img class="small-img mr-b10" src="./img/reliable-platform.svg" alt="general-img">
-                <h4 class="c-darkblue mr-b15">Reliable platform</h4>
-                <p class="small-p c-darkgray mr-b15">More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
-                <a class="text-xsmall" href="#">Security  ></a>
-            </div>
-        </div>
-    </section>
+    </footer>
 </body>
 </html>
